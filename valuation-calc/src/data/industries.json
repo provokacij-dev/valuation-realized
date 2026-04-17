@@ -1,0 +1,4756 @@
+{
+  "geographies": {
+    "us": {
+      "geography": {
+        "id": "us",
+        "label": "United States",
+        "industries": [
+          "saas",
+          "it_services",
+          "business_services",
+          "healthcare",
+          "manufacturing",
+          "distribution_logistics",
+          "construction",
+          "retail",
+          "food_beverage",
+          "financial_services"
+        ]
+      },
+      "industries": {
+        "saas": {
+          "id": "saas",
+          "label": "SaaS / Technology",
+          "primaryMultiple": "EV/ARR",
+          "valuationContext": {
+            "keyDrivers": [
+              "Recurring revenue (ARR/MRR)",
+              "Net revenue retention",
+              "Gross churn rate",
+              "CAC payback period",
+              "YoY revenue growth",
+              "Gross margin"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/ARR multiples from private SaaS transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M ARR",
+              "multiples": {
+                "low": 3.5,
+                "median": 5.5,
+                "high": 8.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M ARR",
+              "multiples": {
+                "low": 5.0,
+                "median": 7.5,
+                "high": 11.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M ARR",
+              "multiples": {
+                "low": 6.0,
+                "median": 9.0,
+                "high": 14.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "net_revenue_retention",
+              "name": "Net Revenue Retention",
+              "unit": "percent",
+              "thresholds": [
+                90,
+                105,
+                120
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                1.0,
+                2.0
+              ],
+              "description": "Annual net revenue retention rate including expansion and churn"
+            },
+            {
+              "id": "gross_churn_rate",
+              "name": "Gross Churn Rate",
+              "unit": "percent",
+              "thresholds": [
+                3,
+                7,
+                15
+              ],
+              "adjustments": [
+                1.5,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Annual gross logo or revenue churn rate (lower is better)"
+            },
+            {
+              "id": "cac_payback_months",
+              "name": "CAC Payback Period",
+              "unit": "months",
+              "thresholds": [
+                12,
+                18,
+                24
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -0.5
+              ],
+              "description": "Months to recover customer acquisition cost (lower is better)"
+            },
+            {
+              "id": "revenue_growth",
+              "name": "YoY Revenue Growth",
+              "unit": "percent",
+              "thresholds": [
+                15,
+                30,
+                60
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                1.0,
+                2.0
+              ],
+              "description": "Year-over-year ARR growth rate"
+            },
+            {
+              "id": "gross_margin",
+              "name": "Gross Margin",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                70,
+                80
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Gross margin percentage (software delivery costs)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Mid-market vertical SaaS company, $3-5M ARR, southeastern US, strong NRR (115%+)",
+              "multiple": 7.2,
+              "date": "Q2 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Horizontal SaaS platform, $8-12M ARR, US, 25% YoY growth, moderate churn",
+              "multiple": 8.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Early-stage SaaS, $1-2M ARR, US, high growth (80%+ YoY), pre-profit",
+              "multiple": 6.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "it_services": {
+          "id": "it_services",
+          "label": "IT Services / Consulting",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract backlog depth",
+              "Client retention and stickiness",
+              "Staff utilisation rates",
+              "Key person dependency",
+              "Recurring managed-service revenue mix"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 9.0,
+                "high": 10.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 9.5,
+                "high": 11.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 9.0,
+                "median": 10.5,
+                "high": 12.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed but undelivered contract revenue"
+            },
+            {
+              "id": "client_stickiness",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                70,
+                85,
+                95
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of clients retained year-over-year"
+            },
+            {
+              "id": "utilisation_rate",
+              "name": "Staff Utilisation Rate",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                70,
+                80
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of billable staff hours utilised on client work"
+            },
+            {
+              "id": "key_person_dependency",
+              "name": "Key Person Dependency",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                7
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Degree of dependency on key individual(s) (1 = none, 10 = critical; lower is better)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Managed IT services provider, $5-8M revenue, US, 85% recurring revenue, low key-person risk",
+              "multiple": 10.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "IT consulting boutique, $2-4M revenue, US, project-based, high founder dependency",
+              "multiple": 8.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Cybersecurity services firm, $10-15M revenue, US, strong backlog, high utilisation",
+              "multiple": 10.8,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "business_services": {
+          "id": "business_services",
+          "label": "Business Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Client retention rate",
+              "Owner/key-person dependency",
+              "Contract backlog",
+              "Recurring revenue percentage",
+              "Revenue diversification"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 7.0,
+                "median": 7.5,
+                "high": 8.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 8.0,
+                "high": 9.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 8.5,
+                "high": 10.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "client_retention_rate",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                70,
+                85,
+                95
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of clients retained year-over-year"
+            },
+            {
+              "id": "owner_hours_per_week",
+              "name": "Owner/Key-Person Hours per Week",
+              "unit": "hours_per_week",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Hours per week the owner/key person spends on billable client work (lower is better for transferability)"
+            },
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed but undelivered contract revenue"
+            },
+            {
+              "id": "recurring_revenue_pct",
+              "name": "Recurring Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                50,
+                80
+              ],
+              "adjustments": [
+                0,
+                0.5,
+                1.0,
+                1.5
+              ],
+              "description": "Percentage of revenue from retainers, subscriptions, or long-term contracts"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "IT consulting firm, $4-6M revenue, midwest US, high client retention, moderate owner dependency",
+              "multiple": 7.8,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Accounting/advisory practice, $8-12M revenue, US, strong recurring base, low key-person risk",
+              "multiple": 8.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Management consulting boutique, $2-4M revenue, US, high owner dependency",
+              "multiple": 7.2,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "healthcare": {
+          "id": "healthcare",
+          "label": "Healthcare Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Private payer mix",
+              "Patient retention rate",
+              "Provider dependency / key-person risk",
+              "Multi-location scale",
+              "Regulatory compliance"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.25,
+                "high": 7.25
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 6.0,
+                "median": 6.75,
+                "high": 8.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 6.25,
+                "median": 7.5,
+                "high": 9.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "private_payer_mix",
+              "name": "Private Payer Mix",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                70
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from private/commercial insurance vs government payers"
+            },
+            {
+              "id": "patient_retention",
+              "name": "Patient Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                75,
+                90
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual patient retention/return rate"
+            },
+            {
+              "id": "provider_dependency",
+              "name": "Revenue per Lead Provider",
+              "unit": "percent",
+              "thresholds": [
+                25,
+                40,
+                60
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Percentage of revenue attributable to the lead/founding provider (lower is better)"
+            },
+            {
+              "id": "multi_location",
+              "name": "Number of Locations",
+              "unit": "count",
+              "thresholds": [
+                1,
+                3,
+                5
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of practice locations (more locations = less concentration risk)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Multi-site dental practice, $5-8M revenue, US, 4 locations, low provider dependency",
+              "multiple": 7.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Single-physician specialty practice, $2-3M revenue, US, high provider dependency",
+              "multiple": 5.8,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Behavioral health group, $10-15M revenue, US, diversified payer mix, multiple providers",
+              "multiple": 7.8,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "manufacturing": {
+          "id": "manufacturing",
+          "label": "Manufacturing",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Gross margin and pricing power",
+              "CapEx intensity",
+              "Customer concentration",
+              "Order backlog depth",
+              "Proprietary products vs commodity"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 5.75,
+                "high": 6.75
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 6.0,
+                "median": 6.25,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.75,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "gross_margin",
+              "name": "Gross Margin",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                30,
+                45
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Gross margin percentage (higher margins indicate proprietary products or strong pricing power)"
+            },
+            {
+              "id": "capex_intensity",
+              "name": "CapEx as % of Revenue",
+              "unit": "percent",
+              "thresholds": [
+                3,
+                7,
+                15
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Annual capital expenditure as percentage of revenue (lower is better)"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            },
+            {
+              "id": "backlog_months",
+              "name": "Order Backlog",
+              "unit": "months",
+              "thresholds": [
+                2,
+                4,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of current order backlog"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Precision machining company, $6-10M revenue, US, diversified customer base, strong margins",
+              "multiple": 6.5,
+              "date": "Q2 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Food packaging manufacturer, $15-20M revenue, US, moderate capex, long-term contracts",
+              "multiple": 7.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Custom fabrication shop, $2-4M revenue, US, high customer concentration",
+              "multiple": 5.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "distribution_logistics": {
+          "id": "distribution_logistics",
+          "label": "Distribution / Logistics",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract length and quality",
+              "Fleet age and condition",
+              "Customer concentration",
+              "Route density and coverage",
+              "Asset-light vs asset-heavy model"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.5,
+                "high": 6.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.0,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_length_years",
+              "name": "Average Contract Length",
+              "unit": "years",
+              "thresholds": [
+                1,
+                3,
+                5
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Average length of customer contracts in years"
+            },
+            {
+              "id": "fleet_age",
+              "name": "Average Fleet Age",
+              "unit": "years",
+              "thresholds": [
+                3,
+                5,
+                8
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -0.5
+              ],
+              "description": "Average age of fleet vehicles/equipment in years (lower is better)"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            },
+            {
+              "id": "route_density",
+              "name": "Route Coverage",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                7
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Geographic route density and coverage score (1 = sparse, 10 = comprehensive)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Regional LTL carrier, $8-12M revenue, US, 70% contract revenue, owned fleet",
+              "multiple": 6.5,
+              "date": "Q2 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Last-mile delivery company, $3-5M revenue, US, high growth, asset-light model",
+              "multiple": 5.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Freight brokerage, $15-25M revenue, US, technology-enabled, no fleet assets",
+              "multiple": 7.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "construction": {
+          "id": "construction",
+          "label": "Construction & Trades",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract backlog depth",
+              "Bonding capacity",
+              "Equipment ownership vs leasing",
+              "Repeat client revenue",
+              "Specialty trade premiums"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.25,
+                "high": 6.25
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.75,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.25,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed/awarded contract backlog"
+            },
+            {
+              "id": "bonding_capacity_pct",
+              "name": "Bonding Capacity Utilization",
+              "unit": "percent",
+              "thresholds": [
+                40,
+                60,
+                80
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.3,
+                -0.8
+              ],
+              "description": "Percentage of bonding capacity currently utilized (lower utilization = more room to grow)"
+            },
+            {
+              "id": "equipment_ownership_pct",
+              "name": "Equipment Owned vs Leased",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                75
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Percentage of fleet/equipment that is owned (reduces ongoing lease obligations)"
+            },
+            {
+              "id": "repeat_client_pct",
+              "name": "Repeat Client Revenue",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                70
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Percentage of revenue from repeat clients"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Commercial GC, $10-15M revenue, US, strong bonding, 12+ month backlog",
+              "multiple": 6.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty subcontractor (electrical), $3-5M revenue, US, owner-operated",
+              "multiple": 4.8,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Infrastructure/civil contractor, $20-30M revenue, US, government contracts, diversified",
+              "multiple": 7.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "retail": {
+          "id": "retail",
+          "label": "Retail",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Same-store sales growth",
+              "Lease terms and occupancy costs",
+              "Inventory turnover efficiency",
+              "E-commerce revenue mix",
+              "Brand strength"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.25,
+                "high": 7.25
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 6.0,
+                "median": 6.75,
+                "high": 8.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 6.25,
+                "median": 7.5,
+                "high": 9.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "same_store_sales_growth",
+              "name": "Same-Store Sales Growth",
+              "unit": "percent",
+              "thresholds": [
+                0,
+                3,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year same-store sales growth rate"
+            },
+            {
+              "id": "lease_term_years",
+              "name": "Avg Lease Term Remaining",
+              "unit": "years",
+              "thresholds": [
+                2,
+                5,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Average remaining years on store leases (longer = more stability)"
+            },
+            {
+              "id": "inventory_turns",
+              "name": "Inventory Turns per Year",
+              "unit": "turns",
+              "thresholds": [
+                3,
+                6,
+                10
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Number of times inventory is sold and replaced annually"
+            },
+            {
+              "id": "ecommerce_pct",
+              "name": "E-commerce Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                15,
+                30
+              ],
+              "adjustments": [
+                0,
+                0.3,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from online/e-commerce channels"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Multi-unit specialty retailer, $8-12M revenue, US, strong e-commerce, favorable leases",
+              "multiple": 7.2,
+              "date": "Q2 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Single-location lifestyle retail store, $1-2M revenue, US, prime location, short lease",
+              "multiple": 5.8,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Franchise retail chain (5 units), $5-8M revenue, US, strong brand, growing SSS",
+              "multiple": 6.8,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "food_beverage": {
+          "id": "food_beverage",
+          "label": "Food & Beverage",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Brand recognition and strength",
+              "Distribution coverage",
+              "Recurring revenue from wholesale contracts",
+              "Gross margin profile",
+              "Growth trajectory"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.5,
+                "high": 6.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.0,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "brand_strength",
+              "name": "Brand Recognition Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Self-assessed brand strength (1 = unknown, 10 = regional/national recognition)"
+            },
+            {
+              "id": "distribution_coverage",
+              "name": "Distribution Points",
+              "unit": "count",
+              "thresholds": [
+                50,
+                200,
+                1000
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of retail/wholesale distribution points"
+            },
+            {
+              "id": "recurring_revenue_pct",
+              "name": "Recurring Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                40,
+                65
+              ],
+              "adjustments": [
+                0,
+                0.3,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from subscriptions, standing wholesale orders, or long-term contracts"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Regional CPG brand (snacks), $6-10M revenue, US, strong retail distribution, growing DTC",
+              "multiple": 6.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Craft brewery with taproom, $2-3M revenue, US, limited distribution",
+              "multiple": 5.2,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty food manufacturer, $12-18M revenue, US, national distribution, wholesale contracts",
+              "multiple": 7.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "financial_services": {
+          "id": "financial_services",
+          "label": "Financial Services / FinTech",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "AUM/AUA growth rate",
+              "Client retention rate",
+              "Regulatory compliance maturity",
+              "Recurring fee revenue mix",
+              "Technology enablement"
+            ],
+            "regionalNotes": "North America data; primarily US-centric private transaction set.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 9.5,
+                "high": 10.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.0,
+                "high": 12.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 9.5,
+                "median": 11.5,
+                "high": 13.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "aum_growth",
+              "name": "AUM Growth Rate",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                10,
+                20
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year growth in assets under management (organic)"
+            },
+            {
+              "id": "client_retention",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                85,
+                92,
+                97
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual client retention rate"
+            },
+            {
+              "id": "regulatory_compliance",
+              "name": "Regulatory Compliance Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                5,
+                7,
+                9
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Self-assessed regulatory compliance maturity (1 = ad hoc, 10 = fully audited/certified)"
+            },
+            {
+              "id": "recurring_fee_pct",
+              "name": "Recurring Fee Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                50,
+                70,
+                85
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from recurring management/advisory fees vs transactional"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "RIA with $200-400M AUM, $3-5M revenue, US, high retention, fee-based",
+              "multiple": 9.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Insurance brokerage, $8-12M revenue, US, diversified book, strong renewals",
+              "multiple": 10.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Wealth management firm, $1-3M revenue, US, heavy owner dependency",
+              "multiple": 8.2,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        }
+      }
+    },
+    "europe": {
+      "geography": {
+        "id": "europe",
+        "label": "Europe",
+        "industries": [
+          "saas",
+          "it_services",
+          "business_services",
+          "healthcare",
+          "manufacturing",
+          "distribution_logistics",
+          "construction",
+          "retail",
+          "food_beverage",
+          "financial_services"
+        ]
+      },
+      "industries": {
+        "saas": {
+          "id": "saas",
+          "label": "SaaS / Technology",
+          "primaryMultiple": "EV/ARR",
+          "valuationContext": {
+            "keyDrivers": [
+              "Recurring revenue (ARR/MRR)",
+              "Net revenue retention",
+              "Gross churn rate",
+              "YoY revenue growth",
+              "Multi-market European presence"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/ARR multiples from private SaaS transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M ARR",
+              "multiples": {
+                "low": 3.0,
+                "median": 4.5,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M ARR",
+              "multiples": {
+                "low": 4.0,
+                "median": 6.5,
+                "high": 9.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M ARR",
+              "multiples": {
+                "low": 5.0,
+                "median": 7.5,
+                "high": 11.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "net_revenue_retention",
+              "name": "Net Revenue Retention",
+              "unit": "percent",
+              "thresholds": [
+                90,
+                105,
+                120
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                1.0,
+                2.0
+              ],
+              "description": "Annual net revenue retention rate including expansion and churn"
+            },
+            {
+              "id": "gross_churn_rate",
+              "name": "Gross Churn Rate",
+              "unit": "percent",
+              "thresholds": [
+                3,
+                7,
+                15
+              ],
+              "adjustments": [
+                1.5,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Annual gross churn rate (lower is better)"
+            },
+            {
+              "id": "cac_payback_months",
+              "name": "CAC Payback Period",
+              "unit": "months",
+              "thresholds": [
+                12,
+                18,
+                24
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -0.5
+              ],
+              "description": "Months to recover customer acquisition cost (lower is better)"
+            },
+            {
+              "id": "revenue_growth",
+              "name": "YoY Revenue Growth",
+              "unit": "percent",
+              "thresholds": [
+                15,
+                30,
+                60
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                1.0,
+                2.0
+              ],
+              "description": "Year-over-year ARR growth rate"
+            },
+            {
+              "id": "gross_margin",
+              "name": "Gross Margin",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                70,
+                80
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Gross margin percentage (software delivery costs)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "B2B SaaS platform, $4-7M ARR, DACH region, strong retention, expanding to Nordics",
+              "multiple": 6.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Fintech SaaS, $10-15M ARR, France, high growth, regulatory moat",
+              "multiple": 8.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "it_services": {
+          "id": "it_services",
+          "label": "IT Services / Consulting",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract backlog depth",
+              "Client retention and stickiness",
+              "Staff utilisation rates",
+              "Key person dependency",
+              "Recurring managed-service revenue mix"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 7.0,
+                "median": 8.0,
+                "high": 9.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 8.5,
+                "high": 10.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 9.5,
+                "high": 11.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed but undelivered contract revenue"
+            },
+            {
+              "id": "client_stickiness",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                70,
+                85,
+                95
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of clients retained year-over-year"
+            },
+            {
+              "id": "utilisation_rate",
+              "name": "Staff Utilisation Rate",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                70,
+                80
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of billable staff hours utilised on client work"
+            },
+            {
+              "id": "key_person_dependency",
+              "name": "Key Person Dependency",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                7
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Degree of dependency on key individual(s) (1 = none, 10 = critical; lower is better)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "IT managed services provider, $4-6M revenue, Germany, recurring contracts, low owner dependency",
+              "multiple": 9.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "IT consulting firm, $3-5M revenue, Netherlands, high founder dependency",
+              "multiple": 7.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "business_services": {
+          "id": "business_services",
+          "label": "Business Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Client retention rate",
+              "Owner/key-person dependency",
+              "Contract backlog",
+              "Recurring revenue percentage",
+              "Cross-border revenue"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.25,
+                "high": 7.25
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 6.0,
+                "median": 6.75,
+                "high": 8.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 6.25,
+                "median": 7.5,
+                "high": 9.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "client_retention_rate",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                70,
+                85,
+                95
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of clients retained year-over-year"
+            },
+            {
+              "id": "owner_hours_per_week",
+              "name": "Owner/Key-Person Hours per Week",
+              "unit": "hours_per_week",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Hours per week the owner/key person spends on billable client work (lower is better for transferability)"
+            },
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed but undelivered contract revenue"
+            },
+            {
+              "id": "recurring_revenue_pct",
+              "name": "Recurring Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                50,
+                80
+              ],
+              "adjustments": [
+                0,
+                0.5,
+                1.0,
+                1.5
+              ],
+              "description": "Percentage of revenue from retainers, subscriptions, or long-term contracts"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Engineering consultancy, $5-8M revenue, Netherlands, multi-country clients",
+              "multiple": 6.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Accounting practice, $3-5M revenue, Germany, high owner dependency",
+              "multiple": 5.8,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "healthcare": {
+          "id": "healthcare",
+          "label": "Healthcare Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Private payer mix vs public health system",
+              "Patient retention rate",
+              "Provider dependency / key-person risk",
+              "Multi-location scale",
+              "Regulatory environment"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.75,
+                "high": 6.75
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.25,
+                "high": 7.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.75,
+                "median": 7.0,
+                "high": 9.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "private_payer_mix",
+              "name": "Private Payer Mix",
+              "unit": "percent",
+              "thresholds": [
+                15,
+                35,
+                55
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from private patients vs public health system"
+            },
+            {
+              "id": "patient_retention",
+              "name": "Patient Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                75,
+                90
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual patient retention rate"
+            },
+            {
+              "id": "provider_dependency",
+              "name": "Revenue per Lead Provider",
+              "unit": "percent",
+              "thresholds": [
+                25,
+                40,
+                60
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Revenue attributable to the lead provider (lower is better)"
+            },
+            {
+              "id": "multi_location",
+              "name": "Number of Locations",
+              "unit": "count",
+              "thresholds": [
+                1,
+                3,
+                5
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of practice locations (more locations = less concentration risk)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Dental chain, 5 locations, $6-10M revenue, Scandinavia, strong recurring patient base",
+              "multiple": 7.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Physiotherapy group, $3-5M revenue, Germany, mix of private and statutory insurance",
+              "multiple": 5.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "manufacturing": {
+          "id": "manufacturing",
+          "label": "Manufacturing",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Gross margin and pricing power",
+              "Customer concentration",
+              "Export revenue diversification",
+              "CapEx intensity",
+              "Order backlog"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.0,
+                "high": 6.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.5,
+                "high": 6.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 6.0,
+                "high": 8.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "gross_margin",
+              "name": "Gross Margin",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                30,
+                45
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Gross margin percentage"
+            },
+            {
+              "id": "capex_intensity",
+              "name": "CapEx as % of Revenue",
+              "unit": "percent",
+              "thresholds": [
+                3,
+                7,
+                15
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Annual capital expenditure as percentage of revenue (lower is better)"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Revenue from the largest single customer (lower is better)"
+            },
+            {
+              "id": "backlog_months",
+              "name": "Order Backlog",
+              "unit": "months",
+              "thresholds": [
+                2,
+                4,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of current order backlog"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Industrial components manufacturer, $8-12M revenue, Germany, automotive supply chain",
+              "multiple": 5.5,
+              "date": "Q2 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty chemicals producer, $15-20M revenue, France, export-focused",
+              "multiple": 6.2,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "distribution_logistics": {
+          "id": "distribution_logistics",
+          "label": "Distribution / Logistics",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract length and quality",
+              "Fleet age and condition",
+              "Customer concentration",
+              "Route density and coverage",
+              "Cross-border logistics capability"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.0,
+                "median": 4.5,
+                "high": 5.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.0,
+                "high": 6.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.5,
+                "high": 7.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_length_years",
+              "name": "Average Contract Length",
+              "unit": "years",
+              "thresholds": [
+                1,
+                3,
+                5
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Average length of customer contracts in years"
+            },
+            {
+              "id": "fleet_age",
+              "name": "Average Fleet Age",
+              "unit": "years",
+              "thresholds": [
+                3,
+                5,
+                8
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -0.5
+              ],
+              "description": "Average age of fleet vehicles/equipment in years (lower is better)"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            },
+            {
+              "id": "route_density",
+              "name": "Route Coverage",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                7
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Geographic route density and coverage score (1 = sparse, 10 = comprehensive)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Pan-European 3PL provider, $8-12M revenue, Benelux, long-term contracts, modern fleet",
+              "multiple": 5.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Last-mile delivery operator, $3-5M revenue, UK, e-commerce focused",
+              "multiple": 4.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "construction": {
+          "id": "construction",
+          "label": "Construction & Trades",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract backlog depth",
+              "Bonding/guarantee capacity",
+              "Equipment ownership vs leasing",
+              "Repeat client revenue",
+              "Regulatory certifications"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 3.5,
+                "median": 4.0,
+                "high": 5.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 4.0,
+                "median": 4.5,
+                "high": 5.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 4.0,
+                "median": 5.0,
+                "high": 7.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed/awarded contract backlog"
+            },
+            {
+              "id": "bonding_capacity_pct",
+              "name": "Bonding Capacity Utilization",
+              "unit": "percent",
+              "thresholds": [
+                40,
+                60,
+                80
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.3,
+                -0.8
+              ],
+              "description": "Percentage of bonding capacity currently utilized (lower utilization = more room to grow)"
+            },
+            {
+              "id": "equipment_ownership_pct",
+              "name": "Equipment Owned vs Leased",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                75
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Percentage of fleet/equipment that is owned (reduces ongoing lease obligations)"
+            },
+            {
+              "id": "repeat_client_pct",
+              "name": "Repeat Client Revenue",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                70
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Percentage of revenue from repeat clients"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Commercial contractor, $10-15M revenue, UK, strong backlog, government framework contracts",
+              "multiple": 5.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty MEP subcontractor, $3-5M revenue, Germany, owner-operated",
+              "multiple": 3.8,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "retail": {
+          "id": "retail",
+          "label": "Retail",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Same-store sales growth",
+              "Lease terms and occupancy costs",
+              "Inventory turnover efficiency",
+              "E-commerce revenue mix",
+              "Multi-country presence"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.25,
+                "high": 6.25
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.75,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.25,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "same_store_sales_growth",
+              "name": "Same-Store Sales Growth",
+              "unit": "percent",
+              "thresholds": [
+                0,
+                3,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year same-store sales growth rate"
+            },
+            {
+              "id": "lease_term_years",
+              "name": "Avg Lease Term Remaining",
+              "unit": "years",
+              "thresholds": [
+                2,
+                5,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Average remaining years on store leases (longer = more stability)"
+            },
+            {
+              "id": "inventory_turns",
+              "name": "Inventory Turns per Year",
+              "unit": "turns",
+              "thresholds": [
+                3,
+                6,
+                10
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Number of times inventory is sold and replaced annually"
+            },
+            {
+              "id": "ecommerce_pct",
+              "name": "E-commerce Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                15,
+                30
+              ],
+              "adjustments": [
+                0,
+                0.3,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from online/e-commerce channels"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Multi-unit specialty retailer, $8-12M revenue, UK, strong e-commerce, favorable leases",
+              "multiple": 6.2,
+              "date": "Q2 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Franchise retail chain, $5-8M revenue, France, growing SSS",
+              "multiple": 5.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "food_beverage": {
+          "id": "food_beverage",
+          "label": "Food & Beverage",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Brand recognition and strength",
+              "Distribution coverage",
+              "Recurring revenue from wholesale contracts",
+              "Export markets",
+              "Product diversification"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.0,
+                "high": 6.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.5,
+                "high": 6.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 6.0,
+                "high": 8.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "brand_strength",
+              "name": "Brand Recognition Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Self-assessed brand strength (1 = unknown, 10 = regional/national recognition)"
+            },
+            {
+              "id": "distribution_coverage",
+              "name": "Distribution Points",
+              "unit": "count",
+              "thresholds": [
+                50,
+                200,
+                1000
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of retail/wholesale distribution points"
+            },
+            {
+              "id": "recurring_revenue_pct",
+              "name": "Recurring Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                40,
+                65
+              ],
+              "adjustments": [
+                0,
+                0.3,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from subscriptions, standing wholesale orders, or long-term contracts"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Regional CPG brand, $6-10M revenue, Germany, strong retail distribution",
+              "multiple": 5.8,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty food manufacturer, $12-18M revenue, Italy, export-focused, wholesale contracts",
+              "multiple": 6.2,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "financial_services": {
+          "id": "financial_services",
+          "label": "Financial Services / FinTech",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "AUM/AUA growth rate",
+              "Client retention rate",
+              "Regulatory compliance maturity",
+              "Recurring fee revenue mix",
+              "Cross-border licensing"
+            ],
+            "regionalNotes": "Pan-European data spanning UK, DACH, France, Benelux, Southern and CEE markets. Benchmarks sourced in EUR; approximate USD equivalents shown. DACH typically commands highest multiples within Europe.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples from private SME transactions (2022-2025)",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "Dealsuite European M&A Monitor (H1 2024, H2 2024)",
+              "Aventis Advisors SME M&A Multiples Research",
+              "Alvarez & Marsal European Private Company Transaction Analysis (2024)"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 7.0,
+                "median": 8.5,
+                "high": 9.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 9.0,
+                "high": 11.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.5,
+                "high": 12.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "aum_growth",
+              "name": "AUM Growth Rate",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                10,
+                20
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year organic AUM growth"
+            },
+            {
+              "id": "client_retention",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                85,
+                92,
+                97
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual client retention rate"
+            },
+            {
+              "id": "regulatory_compliance",
+              "name": "Regulatory Compliance Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                5,
+                7,
+                9
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Self-assessed regulatory compliance maturity (1 = ad hoc, 10 = fully audited/certified)"
+            },
+            {
+              "id": "recurring_fee_pct",
+              "name": "Recurring Fee Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                50,
+                70,
+                85
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from recurring advisory/management fees"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "IFA practice, $150-300M AUM, $3-5M revenue, UK, FCA compliant, recurring trail fees",
+              "multiple": 9.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Insurance broker, $6-10M GWP, Germany, commercial lines, strong renewals",
+              "multiple": 10.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        }
+      }
+    },
+    "gcc": {
+      "geography": {
+        "id": "gcc",
+        "label": "GCC (Gulf Cooperation Council)",
+        "industries": [
+          "technology",
+          "healthcare",
+          "hospitality",
+          "transport_logistics",
+          "construction",
+          "business_services",
+          "food_beverage",
+          "financial_services",
+          "education",
+          "energy_services"
+        ]
+      },
+      "industries": {
+        "technology": {
+          "id": "technology",
+          "label": "Technology & Software",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Recurring revenue (ARR/MRR)",
+              "Net revenue retention",
+              "Gross churn rate",
+              "CAC payback period",
+              "YoY revenue growth",
+              "Gross margin"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 9.0,
+                "median": 11.0,
+                "high": 12.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 9.5,
+                "median": 11.5,
+                "high": 14.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 11.0,
+                "median": 13.5,
+                "high": 15.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "net_revenue_retention",
+              "name": "Net Revenue Retention",
+              "unit": "percent",
+              "thresholds": [
+                90,
+                105,
+                120
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                1.0,
+                2.0
+              ],
+              "description": "Annual net revenue retention rate including expansion and churn"
+            },
+            {
+              "id": "gross_churn_rate",
+              "name": "Gross Churn Rate",
+              "unit": "percent",
+              "thresholds": [
+                3,
+                7,
+                15
+              ],
+              "adjustments": [
+                1.5,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Annual gross churn rate (lower is better)"
+            },
+            {
+              "id": "cac_payback_months",
+              "name": "CAC Payback Period",
+              "unit": "months",
+              "thresholds": [
+                12,
+                18,
+                24
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -0.5
+              ],
+              "description": "Months to recover customer acquisition cost (lower is better)"
+            },
+            {
+              "id": "revenue_growth",
+              "name": "YoY Revenue Growth",
+              "unit": "percent",
+              "thresholds": [
+                15,
+                30,
+                60
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                1.0,
+                2.0
+              ],
+              "description": "Year-over-year revenue growth rate"
+            },
+            {
+              "id": "gross_margin",
+              "name": "Gross Margin",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                70,
+                80
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Gross margin percentage"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Enterprise SaaS platform, $4-7M ARR, UAE, serving government sector, strong NRR",
+              "multiple": 12.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "IT services company, $2-4M revenue, Saudi Arabia, Vision 2030 aligned, high growth",
+              "multiple": 10.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "healthcare": {
+          "id": "healthcare",
+          "label": "Healthcare Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Private payer and insurance mix",
+              "Patient retention rate",
+              "Provider dependency",
+              "Multi-location scale",
+              "Regulatory licensing"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 9.5,
+                "high": 10.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.0,
+                "high": 12.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 9.5,
+                "median": 11.5,
+                "high": 13.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "private_payer_mix",
+              "name": "Private Payer Mix",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                70
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from private/insurance patients vs government-funded"
+            },
+            {
+              "id": "patient_retention",
+              "name": "Patient Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                60,
+                75,
+                90
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual patient retention/return rate"
+            },
+            {
+              "id": "provider_dependency",
+              "name": "Revenue per Lead Provider",
+              "unit": "percent",
+              "thresholds": [
+                25,
+                40,
+                60
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Revenue attributable to the lead provider (lower is better)"
+            },
+            {
+              "id": "multi_location",
+              "name": "Number of Locations",
+              "unit": "count",
+              "thresholds": [
+                1,
+                3,
+                5
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of practice locations (more locations = less concentration risk)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Multi-site dental/dermatology clinic group, $6-10M revenue, UAE, diversified payer mix",
+              "multiple": 10.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Single-site specialty clinic, $2-3M revenue, Saudi Arabia, high provider dependency",
+              "multiple": 8.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "hospitality": {
+          "id": "hospitality",
+          "label": "Hospitality & Tourism",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Average occupancy rate",
+              "Revenue per key/room",
+              "Asset-light revenue model",
+              "Government tourism project exposure",
+              "Seasonal diversification"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 7.0,
+                "median": 8.5,
+                "high": 9.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 9.0,
+                "high": 11.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.5,
+                "high": 12.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "occupancy_rate",
+              "name": "Average Occupancy Rate",
+              "unit": "percent",
+              "thresholds": [
+                50,
+                65,
+                80
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Average annual occupancy rate across properties"
+            },
+            {
+              "id": "revenue_per_key",
+              "name": "Revenue per Key/Room",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                7
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Revenue per available room relative to market benchmarks (1 = well below, 10 = premium)"
+            },
+            {
+              "id": "asset_light",
+              "name": "Asset-Light Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                40,
+                60
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from management contracts, franchising, or other asset-light models"
+            },
+            {
+              "id": "tourism_dependency",
+              "name": "Government Tourism Project Exposure",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                30,
+                50
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue linked to government tourism initiatives and mega-projects"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Boutique hotel management company, $5-8M revenue, UAE, 3 properties, asset-light model",
+              "multiple": 9.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Tourism services operator, $2-4M revenue, Saudi Arabia, Vision 2030 aligned, seasonal",
+              "multiple": 8.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "F&B and leisure group, $10-15M revenue, Qatar, diversified portfolio, high occupancy",
+              "multiple": 10.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "transport_logistics": {
+          "id": "transport_logistics",
+          "label": "Transport & Logistics",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Licensed route coverage",
+              "E-commerce last-mile revenue",
+              "Fleet quality and age",
+              "Customer concentration",
+              "Cross-border GCC capability"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 7.0,
+                "median": 8.0,
+                "high": 9.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 8.5,
+                "high": 10.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 9.5,
+                "high": 11.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "route_licensing",
+              "name": "Licensed Route Coverage",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                7
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Geographic route coverage and licensing breadth (1 = single city, 10 = pan-GCC)"
+            },
+            {
+              "id": "ecommerce_revenue",
+              "name": "E-Commerce Last-Mile Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                50
+              ],
+              "adjustments": [
+                0,
+                0.5,
+                1.0,
+                1.5
+              ],
+              "description": "Percentage of revenue from e-commerce last-mile delivery"
+            },
+            {
+              "id": "fleet_quality",
+              "name": "Fleet Age Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                4,
+                6,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Fleet quality and modernity score (1 = aging, 10 = brand new)"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Last-mile delivery company, $5-8M revenue, UAE, e-commerce focused, modern fleet",
+              "multiple": 9.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Freight forwarding company, $3-5M revenue, Saudi Arabia, cross-GCC routes",
+              "multiple": 7.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Cold chain logistics provider, $10-15M revenue, UAE, long-term FMCG contracts",
+              "multiple": 9.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "construction": {
+          "id": "construction",
+          "label": "Construction & Real Estate Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract backlog depth",
+              "Government project exposure",
+              "Equipment ownership",
+              "Workforce localisation compliance",
+              "Repeat client relationships"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 6.0,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.5,
+                "high": 8.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 6.0,
+                "median": 7.5,
+                "high": 9.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed/awarded contract backlog"
+            },
+            {
+              "id": "bonding_capacity_pct",
+              "name": "Bonding Capacity Utilization",
+              "unit": "percent",
+              "thresholds": [
+                40,
+                60,
+                80
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.3,
+                -0.8
+              ],
+              "description": "Percentage of bonding capacity currently utilized (lower utilization = more room to grow)"
+            },
+            {
+              "id": "equipment_ownership_pct",
+              "name": "Equipment Owned vs Leased",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                75
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Percentage of fleet/equipment that is owned"
+            },
+            {
+              "id": "repeat_client_pct",
+              "name": "Repeat Client Revenue",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                70
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Percentage of revenue from repeat clients"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "MEP contractor, $8-12M revenue, UAE, government project backlog, owned equipment",
+              "multiple": 7.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Fit-out and interiors firm, $3-5M revenue, Saudi Arabia, Vision 2030 projects",
+              "multiple": 6.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "business_services": {
+          "id": "business_services",
+          "label": "Business & Professional Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Client retention rate",
+              "Owner/key-person dependency",
+              "Contract backlog",
+              "Recurring revenue percentage",
+              "Localisation and Saudisation compliance"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.5,
+                "high": 7.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 6.0,
+                "median": 7.0,
+                "high": 8.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 6.5,
+                "median": 8.0,
+                "high": 10.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "client_retention_rate",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                70,
+                85,
+                95
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of clients retained year-over-year"
+            },
+            {
+              "id": "owner_hours_per_week",
+              "name": "Owner/Key-Person Hours per Week",
+              "unit": "hours_per_week",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Hours per week the owner/key person spends on billable client work (lower is better)"
+            },
+            {
+              "id": "contract_backlog_months",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                3,
+                6,
+                12
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed but undelivered contract revenue"
+            },
+            {
+              "id": "recurring_revenue_pct",
+              "name": "Recurring Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                50,
+                80
+              ],
+              "adjustments": [
+                0,
+                0.5,
+                1.0,
+                1.5
+              ],
+              "description": "Percentage of revenue from retainers, subscriptions, or long-term contracts"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Management consulting firm, $4-7M revenue, UAE, diversified client base, low key-person risk",
+              "multiple": 7.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "HR and recruitment services company, $2-4M revenue, Saudi Arabia, Saudisation compliance",
+              "multiple": 6.0,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "food_beverage": {
+          "id": "food_beverage",
+          "label": "Food & Beverage",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Brand recognition and strength",
+              "Distribution coverage",
+              "Recurring wholesale contracts",
+              "Franchise model scalability",
+              "Import dependency"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.25,
+                "high": 6.25
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 5.75,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.25,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "brand_strength",
+              "name": "Brand Recognition Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                3,
+                5,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Self-assessed brand strength (1 = unknown, 10 = regional recognition)"
+            },
+            {
+              "id": "distribution_coverage",
+              "name": "Distribution Points",
+              "unit": "count",
+              "thresholds": [
+                50,
+                200,
+                1000
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of retail/wholesale distribution points"
+            },
+            {
+              "id": "recurring_revenue_pct",
+              "name": "Recurring Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                40,
+                65
+              ],
+              "adjustments": [
+                0,
+                0.3,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from standing wholesale orders or long-term contracts"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "QSR franchise operator, $5-8M revenue, UAE, 8 locations, strong brand",
+              "multiple": 6.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty food distributor, $3-5M revenue, Saudi Arabia, FMCG import/distribution",
+              "multiple": 5.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "financial_services": {
+          "id": "financial_services",
+          "label": "Financial Services & FinTech",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "AUM/AUA growth rate",
+              "Client retention rate",
+              "Regulatory compliance and licensing",
+              "Recurring fee revenue mix",
+              "Technology enablement"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 10.0,
+                "high": 11.0
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.5,
+                "high": 13.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 10.0,
+                "median": 12.5,
+                "high": 14.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "aum_growth",
+              "name": "AUM Growth Rate",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                10,
+                20
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year growth in assets under management (organic)"
+            },
+            {
+              "id": "client_retention",
+              "name": "Client Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                85,
+                92,
+                97
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual client retention rate"
+            },
+            {
+              "id": "regulatory_compliance",
+              "name": "Regulatory Compliance Score",
+              "unit": "score_1_10",
+              "thresholds": [
+                5,
+                7,
+                9
+              ],
+              "adjustments": [
+                -1.0,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Regulatory compliance maturity (1 = ad hoc, 10 = fully licensed and audited)"
+            },
+            {
+              "id": "recurring_fee_pct",
+              "name": "Recurring Fee Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                50,
+                70,
+                85
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from recurring management/advisory fees vs transactional"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Wealth management firm, $4-7M revenue, UAE, DFSA licensed, high retention",
+              "multiple": 11.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "FinTech payments platform, $2-4M revenue, Saudi Arabia, SAMA licensed, high growth",
+              "multiple": 12.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "education": {
+          "id": "education",
+          "label": "Education",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Annual enrollment growth",
+              "Student retention rate",
+              "Number of licensed locations",
+              "EdTech revenue integration",
+              "Curriculum accreditation"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 8.0,
+                "median": 9.5,
+                "high": 10.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.0,
+                "high": 12.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 9.5,
+                "median": 11.5,
+                "high": 13.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "enrollment_growth",
+              "name": "Annual Enrollment Growth",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                10,
+                20
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year student enrollment growth rate"
+            },
+            {
+              "id": "student_retention",
+              "name": "Student Retention Rate",
+              "unit": "percent",
+              "thresholds": [
+                70,
+                85,
+                95
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Annual student retention/re-enrollment rate"
+            },
+            {
+              "id": "licensing_coverage",
+              "name": "Number of Licensed Locations",
+              "unit": "count",
+              "thresholds": [
+                1,
+                3,
+                5
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Number of licensed and operational campus/school locations"
+            },
+            {
+              "id": "edtech_integration",
+              "name": "EdTech Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                50
+              ],
+              "adjustments": [
+                0,
+                0.5,
+                1.0,
+                1.5
+              ],
+              "description": "Percentage of revenue from digital/EdTech products and services"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "K-12 private school group, $8-12M revenue, UAE, 3 campuses, international curriculum",
+              "multiple": 10.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "EdTech training platform, $2-4M revenue, Saudi Arabia, corporate clients, high growth",
+              "multiple": 9.5,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Nursery/early years chain, $4-6M revenue, UAE, 5 locations, strong retention",
+              "multiple": 11.0,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "energy_services": {
+          "id": "energy_services",
+          "label": "Energy Services",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Contract backlog depth",
+              "ICV/local content compliance",
+              "Renewable energy revenue mix",
+              "Customer concentration",
+              "Government contract exposure"
+            ],
+            "regionalNotes": "GCC data covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Transaction data is scarcer than in Western markets; multiples incorporate proxy calculations from regional listed company benchmarks with SME discounts applied.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi Arabian Monetary Authority (SAMA) FinTech Market Data",
+              "UAE Ministry of Economy SME Transaction Reports"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 7.0,
+                "median": 8.5,
+                "high": 9.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 7.5,
+                "median": 9.0,
+                "high": 11.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 8.5,
+                "median": 10.5,
+                "high": 12.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "contract_backlog",
+              "name": "Contract Backlog",
+              "unit": "months",
+              "thresholds": [
+                6,
+                12,
+                24
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of signed contract backlog"
+            },
+            {
+              "id": "icv_compliance",
+              "name": "ICV/Local Content Score",
+              "unit": "percent",
+              "thresholds": [
+                30,
+                50,
+                70
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "In-Country Value or local content compliance score"
+            },
+            {
+              "id": "renewable_mix",
+              "name": "Renewable Energy Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                50
+              ],
+              "adjustments": [
+                0,
+                0.5,
+                1.0,
+                1.5
+              ],
+              "description": "Percentage of revenue from renewable energy projects and services"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                15,
+                30,
+                50
+              ],
+              "adjustments": [
+                1.0,
+                0.5,
+                0,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Oil & gas services contractor, $8-12M revenue, UAE, long-term NOC contracts, high ICV",
+              "multiple": 9.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Solar EPC firm, $3-5M revenue, Saudi Arabia, growing renewable pipeline, Vision 2030",
+              "multiple": 10.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Oilfield equipment maintenance company, $5-8M revenue, Qatar, single customer dependency",
+              "multiple": 7.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "retail": {
+          "id": "retail",
+          "label": "Retail & E-commerce",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Same-store sales growth",
+              "E-commerce revenue mix",
+              "Brand strength and customer loyalty",
+              "Lease terms and occupancy costs",
+              "Inventory turnover efficiency",
+              "Tourist vs. resident customer split"
+            ],
+            "regionalNotes": "GCC retail benefits from world-class mall infrastructure and high tourist footfall. Saudi Vision 2030 is driving consumer spending diversification. E-commerce penetration is rising rapidly across UAE and Saudi Arabia. Tourist-facing premium brands in Dubai command a meaningful premium. Free zone e-commerce licences in UAE simplify cross-border operations.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed company benchmarks (KPMG Q4 2024, Dubai Chamber of Commerce) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Dubai Chamber of Commerce Retail Market Reports",
+              "Saudi General Authority for Statistics (GASTAT) Consumer Spending Data"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.5,
+                "high": 6.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 6.25,
+                "high": 7.5
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 7.0,
+                "high": 9.0
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "same_store_sales_growth",
+              "name": "Same-Store Sales Growth",
+              "unit": "percent",
+              "thresholds": [
+                0,
+                3,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Year-over-year same-store sales growth rate"
+            },
+            {
+              "id": "ecommerce_pct",
+              "name": "E-commerce Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                5,
+                15,
+                30
+              ],
+              "adjustments": [
+                0,
+                0.3,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from online/e-commerce channels"
+            },
+            {
+              "id": "lease_term_years",
+              "name": "Avg Lease Term Remaining",
+              "unit": "years",
+              "thresholds": [
+                2,
+                5,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Average remaining years on store leases (longer = more stability)"
+            },
+            {
+              "id": "inventory_turns",
+              "name": "Inventory Turns per Year",
+              "unit": "turns",
+              "thresholds": [
+                3,
+                6,
+                10
+              ],
+              "adjustments": [
+                -0.3,
+                0,
+                0.3,
+                0.5
+              ],
+              "description": "Number of times inventory is sold and replaced annually"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Multi-brand fashion retailer, $5-9M revenue, UAE, strong mall presence, growing e-commerce",
+              "multiple": 6.5,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Gifting and lifestyle e-commerce platform, $2-4M revenue, UAE, own-brand products, repeat customer base",
+              "multiple": 5.8,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Specialty food retail chain (3 outlets), $3-6M revenue, Saudi Arabia, tourist-facing, Vision 2030 location",
+              "multiple": 6.0,
+              "date": "Q2 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        },
+        "manufacturing": {
+          "id": "manufacturing",
+          "label": "Manufacturing",
+          "primaryMultiple": "EV/EBITDA",
+          "valuationContext": {
+            "keyDrivers": [
+              "Gross margin and pricing power",
+              "CapEx intensity and asset base",
+              "Customer concentration",
+              "Order backlog depth",
+              "Proprietary vs commodity products",
+              "Free zone / NIDLP alignment"
+            ],
+            "regionalNotes": "GCC manufacturing benefits from UAE free zone advantages (100% foreign ownership, zero corporate tax for qualifying entities). Saudi NIDLP under Vision 2030 is actively incentivising local manufacturing. Transaction data is limited; multiples are proxied from GCC-listed industrial companies with SME discounts applied (typically 30-50%). Businesses aligned with localisation targets may attract strategic premiums from government-linked buyers.",
+            "disclaimers": [
+              "Multiples reflect 2022-2025 market conditions and may not represent current pricing",
+              "This is an approximation for planning purposes only and should not be relied upon for transaction decisions without professional advice",
+              "Size band placement and quality adjustments are indicative; actual deal terms depend on specific business characteristics and negotiation dynamics",
+              "GCC transaction data is less liquid than US/European markets; proxy calculations from listed company benchmarks with SME discounts (typically 30-50%) have been applied where direct private transaction data is unavailable"
+            ],
+            "method": "Comparable company analysis using EV/EBITDA multiples; where direct SME transaction data is limited, listed industrial company benchmarks (KPMG Q4 2024, NIDLP data) with SME discount applied",
+            "sources": [
+              "BizBuySell SME Transaction Database (2022-2025)",
+              "DealStats (IMAA) Private Company Transaction Comparables",
+              "Duff & Phelps / Kroll Valuation Handbook",
+              "Valuation Realized proprietary deal experience",
+              "KPMG GCC Listed Company Valuation Benchmarks (Q4 2024)",
+              "Saudi National Industrial Development & Logistics Program (NIDLP) Reports",
+              "UAE Ministry of Economy Manufacturing Sector Data"
+            ]
+          },
+          "sizeBands": [
+            {
+              "id": "$1-5M",
+              "label": "$1M - $5M Revenue",
+              "multiples": {
+                "low": 4.5,
+                "median": 5.5,
+                "high": 6.5
+              }
+            },
+            {
+              "id": "$5-15M",
+              "label": "$5M - $15M Revenue",
+              "multiples": {
+                "low": 5.0,
+                "median": 6.0,
+                "high": 7.0
+              }
+            },
+            {
+              "id": "$15-50M",
+              "label": "$15M - $50M Revenue",
+              "multiples": {
+                "low": 5.5,
+                "median": 6.5,
+                "high": 8.5
+              }
+            }
+          ],
+          "qualityFactors": [
+            {
+              "id": "gross_margin",
+              "name": "Gross Margin",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                30,
+                45
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Gross margin percentage (higher margins indicate proprietary products or strong pricing power)"
+            },
+            {
+              "id": "capex_intensity",
+              "name": "CapEx as % of Revenue",
+              "unit": "percent",
+              "thresholds": [
+                3,
+                7,
+                15
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Annual capital expenditure as percentage of revenue (lower is better)"
+            },
+            {
+              "id": "customer_concentration",
+              "name": "Top Customer Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                10,
+                25,
+                40
+              ],
+              "adjustments": [
+                0.5,
+                0,
+                -0.5,
+                -1.0
+              ],
+              "description": "Percentage of revenue from the largest single customer (lower is better)"
+            },
+            {
+              "id": "backlog_months",
+              "name": "Order Backlog",
+              "unit": "months",
+              "thresholds": [
+                2,
+                4,
+                8
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Months of current order backlog"
+            },
+            {
+              "id": "proprietary_product_pct",
+              "name": "Proprietary Product Revenue %",
+              "unit": "percent",
+              "thresholds": [
+                20,
+                50,
+                80
+              ],
+              "adjustments": [
+                -0.5,
+                0,
+                0.5,
+                1.0
+              ],
+              "description": "Percentage of revenue from own-brand or proprietary products (vs. contract/commodity manufacturing)"
+            }
+          ],
+          "comparableTransactions": [
+            {
+              "description": "Plastic packaging manufacturer, $5-10M revenue, UAE free zone, export-oriented, steady margins",
+              "multiple": 6.0,
+              "date": "Q1 2025",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Food and beverage manufacturer (own brand), $3-6M revenue, Saudi Arabia, Vision 2030 localisation aligned",
+              "multiple": 6.5,
+              "date": "Q3 2024",
+              "source": "Private transaction (anonymized)"
+            },
+            {
+              "description": "Metal fabrication workshop, $2-4M revenue, UAE, contract manufacturing, moderate customer concentration",
+              "multiple": 5.0,
+              "date": "Q4 2024",
+              "source": "Private transaction (anonymized)"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

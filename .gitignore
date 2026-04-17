@@ -1,0 +1,20 @@
+# Dependencies
+**/node_modules/
+**/.next/
+**/dist/
+**/build/
+
+# Environment
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Tooling cache
+.claude/
+.gstack/
